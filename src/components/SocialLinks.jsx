@@ -17,6 +17,7 @@ const SocialLinks = () => {
 
             ),
             href: "https://www.linkedin.com/in/damien-hebert-5590b49a/",
+            style: "rounded-tr-md",
 
         },
         {
@@ -68,11 +69,11 @@ const SocialLinks = () => {
 
 
     return (
-        <div className='flex flex-col top-[35%] left-0 fixed'>
+        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
             <ul>
                 {links.map(({id, child, href, style, download}) => (
-                    <li key={id} className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gradient-to-r from-gray-500 to-taupe-400' + " " + style}>
-                        <a href={href} className='flex justify-between items-center w-full text-black-200'
+                    <li key={id} className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gradient-to-r from-gray-500 to-gray-600' + " " + style}>
+                        <a href={href} className='flex justify-between items-center w-full text-stone-900'
                             download={download}
                             target="_blank"
                             rel="noreferrer">
