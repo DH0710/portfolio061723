@@ -13,8 +13,7 @@ const Home = () => {
                 <div className='flex flex-col justify-center h-full'>
                     <h2 className='text-4xl sm:text-7xl font-bold text-gray-500 py-4 max-w-md'>Software Developer</h2>
                     <p className='text-gray-500 max-w-md'>
-                        Hello! Im Damien Hebert, I am a software developer currently based in Houston, Tx.
-                        I am currently working with technologies such as Javascript, React, Tailwind, and Node/Express.js
+                        Currently working with programming technologies such as Javascript, React, Tailwind, and Node/Express.js
                     </p>
 
                     <div>

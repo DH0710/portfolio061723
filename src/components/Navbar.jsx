@@ -40,7 +40,13 @@ const Navbar = () => {
 
 <div>
         <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-4  cursor-pointer hover:scale-110 duration-300'></img>
+        
+       
+
+
     </div>
+
+    
 
            
 
