@@ -1,5 +1,4 @@
 import React from 'react'
-import profileimage from "../assets/newphoto.jpg"
 import { MdDoubleArrow } from "react-icons/md"
 
 const Home = () => {
@@ -12,23 +11,23 @@ const Home = () => {
       items-center justify-center h-full px-4 md:flex-row'>
 
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-gray-500 py-4 max-w-md'>Front End Developer</h2>
+                    <h2 className='text-4xl sm:text-7xl font-bold text-gray-500 py-4 max-w-md'>Software Developer</h2>
                     <p className='text-gray-500'>
-                        Hello! Im Damien Hebert, I am actively pursuing a career within software development.
+                        Hello! Im Damien Hebert, I am a software developer currently based in Houston, Tx.
                         I am currently working with technologies such as Javascript, React, Tailwind, and Node/Express.js
                     </p>
 
                     <div>
-                        <button className='text-gray-500 w-fit px-6 py-3 my-2 flex items-center rounded-md'> Portfolio
-                            <span>
-                                <MdDoubleArrow />
+                        <button className='group text-gray-500 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-taupe-600 to-black-400 cursor-pointer'> Portfolio
+                            <span className='group-hover:rotate-90 duration-300'>
+                                <MdDoubleArrow size={25} className='ml-1' />
                             </span>
                         </button>
                     </div>
                 </div>
 
                 <div>
-                    <img src={profileimage} alt="my profile" className='' />
+                    <img src="" alt="" className='' />
                 </div>
 
 
