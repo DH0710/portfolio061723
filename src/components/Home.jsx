@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdDoubleArrow } from "react-icons/md"
+import { Link } from "react-scroll";
 
 const Home = () => {
     return (
@@ -17,11 +18,14 @@ const Home = () => {
                     </p>
 
                     <div>
-                        <button className='group text-gray-500 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-taupe-600 to-black-400 cursor-pointer'> Portfolio
+                        <Link to="portfolio"
+                            smooth duration={500}
+                            className='group text-gray-500 w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-taupe-600 to-black-400 cursor-pointer'>
+                            Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdDoubleArrow size={25} className='ml-1' />
                             </span>
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

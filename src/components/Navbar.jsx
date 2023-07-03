@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
 import blurprofilepic from "../assets/blurprofilepic.jpg"
+import { Link } from "react-scroll";
 
 
 const Navbar = () => {
@@ -38,19 +39,19 @@ const Navbar = () => {
     h-20 px-4 text-white bg-taupe-600 fixed'>
 
 
-<div>
-        <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-4  cursor-pointer hover:scale-110 duration-300'></img>
-        
-       
+            <div>
+                <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-4  cursor-pointer hover:scale-110 duration-300'></img>
 
 
-    </div>
 
-    
 
-           
+            </div>
 
-           
+
+
+
+
+
 
 
 
@@ -63,9 +64,16 @@ const Navbar = () => {
 
                 {links.map(({ id, link }) => (
 
-                    <li key={id} className='px-4 cursor-pointer capitalize font-medium 
+                    <li
+                        key={id} className='px-4 cursor-pointer capitalize font-medium 
                      hover:scale-105 duration-200 text-gray-500'>
-                        {link}
+
+                        <Link to={link} smooth duration={500}>
+                            {link}
+                        </Link>
+
+
+
                     </li>
                 ))}
             </ul>
@@ -87,7 +95,14 @@ const Navbar = () => {
                         <li
                             key={id}
                             className='px-4 cursor-pointer capitalize py-6 text-4xl hover:scale-105 duration-200'>
-                            {link}
+                            <Link
+                                onClick={() => setNav(!nav)}
+                                to={link}
+                                smooth
+                                duration={500}
+                            >
+                                {link}
+                            </Link>
                         </li>
                     ))}
 
