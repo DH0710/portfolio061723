@@ -56,7 +56,7 @@ const SocialLinks = () => {
 
 
             ),
-            href: "/Updated May 2023 Resume.pdf",
+            href: "/Updated Resume.pdf",
             style: "rounded-br-md",
             download: true,
 
