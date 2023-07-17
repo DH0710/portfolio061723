@@ -51,7 +51,7 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-4 md:grid-cols-4 gap-8 px-12 sm:px-0 ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-8 px-12 sm:px-0 ">
           {portfolios.map(({ id, src, link, name }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <a href={link}>
@@ -62,7 +62,7 @@ const Portfolio = () => {
               />
               </a>
                
-              <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 py-2 sm:px-0 ">
+              <div className="grid sm:grid-cols-1 md:grid-cols-4 gap-8 py-2 sm:px-0 ">
                 <a href={link}>
                 <button className="font-bold w-1/2 px-16 py-1 m-2 duration-200 hover:scale-105">
                   {name}
