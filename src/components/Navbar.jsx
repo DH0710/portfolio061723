@@ -36,15 +36,11 @@ const Navbar = () => {
 
 
         <div className='flex justify-between items-center w-full 
-    h-20 px-4 text-white bg-taupe-600 fixed'>
+    h-12 px-4 text-white bg-taupe-600 fixed'>
 
 
             <div>
                 <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-4  cursor-pointer hover:scale-110 duration-300'></img>
-
-
-
-
             </div>
 
 
