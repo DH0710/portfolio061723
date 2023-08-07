@@ -4,6 +4,7 @@ import blurprofilepic from "../assets/blurprofilepic.jpg"
 import { Link } from "react-scroll";
 
 
+
 const Navbar = () => {
 
     const [nav, setNav] = useState(false)
@@ -40,7 +41,7 @@ const Navbar = () => {
 
 
             <div>
-                <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-4  cursor-pointer hover:scale-110 duration-300'></img>
+                <img src={blurprofilepic} alt="my profile" className='rounded-full h-16 w-16 mx-auto w-2/3 w-full mt-6  cursor-pointer hover:scale-110 duration-300'></img>
             </div>
 
 
@@ -61,7 +62,8 @@ const Navbar = () => {
                 {links.map(({ id, link }) => (
 
                     <li
-                        key={id} className='px-4 cursor-pointer capitalize font-medium 
+                        key={id} 
+                        className='px-4 cursor-pointer capitalize font-medium 
                      hover:scale-105 duration-200 text-gray-500'>
 
                         <Link to={link} smooth duration={500}>

@@ -56,7 +56,7 @@ const SocialLinks = () => {
 
 
             ),
-            href: "/Updated Resume.pdf",
+            href: "/Hebert Resume.pdf",
             style: "rounded-br-md",
             download: true,
 
